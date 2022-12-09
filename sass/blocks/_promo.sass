@@ -1,0 +1,134 @@
+.promo
+    min-height: 650px
+    padding: 21px 0 93px 0
+    background: url(../img/bg.jpg) center (center/cover) no-repeat
+    &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin-top: 90px
+    &__header
+        font-weight: 700
+        font-size: 42px
+        text-transform: uppercase
+        color: #FFFFFF
+        line-height: 42px
+    &__subheader
+        font-weight: 500
+        font-size: 24px
+        line-height: 24px
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-top: 17px
+    &__icons
+        margin-top: 65px
+        width: 425px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__icon
+        width: 108px
+        text-align: center
+        font-weight: 500
+        font-size: 14px
+        color: #FFFFFF
+        overflow: hidden
+        img
+            display: block
+            margin: 0 auto
+            margin-bottom: 20px
+    &__clock
+        width: 45px
+        height: 45px
+        box-sizing: border-box
+        margin: 0 auto
+        margin-bottom: 20px
+        border: 2px solid white
+        border-radius: 100%
+        position: relative
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            height: 1px
+            width: 18px
+            background-color: #fff
+            color: white
+            left: 50%
+            top: 50%
+            transform-origin: left
+            transform: translate(0 , -50%)
+            animation: clock 60s steps(60, end) 
+            animation-iteration-count: infinite
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            left: 50%
+            bottom: 50%
+            width: 4px
+            height: 4px
+            background-color: #fff
+            border-radius: 100%
+            transform: translate(-50% , 50%)
+    &__message
+        width: 45px
+        height: 45px
+        margin: 0 auto
+        margin-bottom: 20px
+        position: relative
+    &__message-wrapper
+        height: 45px
+        position: absolute
+        top: 8px
+    &__screen
+        width: 45px
+        height: 25px
+        box-sizing: border-box
+        border: 2px solid white
+        border-radius: 2px
+        padding: 2px
+    &__help
+        font-size: 12px
+        line-height: 16px
+        border-right: 1px solid red
+        white-space: nowrap
+        overflow: hidden
+        margin: 0 auto
+        animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite
+        animation-iteration-count: infinite
+        
+    &__leg
+        width: 5px
+        height: 13px
+        background-color: white
+        border-radius: 1px
+        position: absolute
+        left: 50%
+        bottom: 9px
+        transform: translateX(-50%)
+    &__platform
+        width: 20px
+        height: 2px
+        background-color: #fff
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 8px
+        
+
+
+    &__cart
+        animation-name: court
+        animation-duration: 5s
+        animation-timing-function: linear
+        animation-iteration-count: infinite
+    &__link
+        font-weight: 500
+        font-size: 16px
+        color: #FFFFFF
+        margin-top: 18px
+        a
+            color: white
+            text-transform: uppercase
+            text-decoration: underline
